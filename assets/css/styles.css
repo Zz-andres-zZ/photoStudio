@@ -1,0 +1,68 @@
+/* mobiel small */
+/* mobile medium */
+/* mobile large */
+/* tablet */
+/* laptop */
+/* laptop L*/
+/* 4k*/
+.z-depth-2 {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+/* NAVBAR NAV */
+#header .navbar {
+  padding-bottom: 0;
+}
+
+#header .logo{}
+
+#header .logo img {
+  padding: 10px 0;
+}
+
+#header .nav-link {
+  margin: 0 5px;
+  position: relative;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+
+#header .nav-link.active {
+  color: #000;
+  position: relative;
+}
+
+#header .nav-link:hover {
+  color: #000;
+}
+
+#header .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 1.9px;
+  background-color: #000;
+  -webkit-transition: width 0.15s ease;
+  transition: width 0.15s ease;
+}
+
+#header .nav-link.active::after {
+  width: 100%;
+}
+
+#header .nav-link:hover::after {
+  width: 100%;
+}
